@@ -5,103 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oferta Académica | UTPL</title>
     <style>
-        /* Estilos limpios y modernos, pero fáciles de entender */
+        /* Colores Institucionales UTPL */
+        :root {
+            --azul-utpl: #002D56;
+            --dorado-utpl: #F2A900;
+            --gris-fondo: #eceff1;
+        }
+
         body {
-            font-family: system-ui, -apple-system, sans-serif;
-            background-color: #f4f6f9;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--gris-fondo);
             margin: 0;
             padding: 0;
             color: #333;
         }
 
         header {
-            background-color: #002D56;
+            background-color: var(--azul-utpl);
             color: white;
-            padding: 25px 20px;
+            padding: 30px 10px;
             text-align: center;
+            border-bottom: 5px solid var(--dorado-utpl);
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-
-        /* Menú de navegación fijo en la parte superior */
+        /* Navegación Clara */
         nav {
-            background-color: #ffffff;
-            padding: 15px;
+            background-color: white;
+            padding: 10px;
             text-align: center;
             position: sticky;
             top: 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
         }
 
         nav a {
-            margin: 0 15px;
             text-decoration: none;
-            color: #002D56;
+            color: var(--azul-utpl);
             font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 4px;
-            transition: background 0.3s;
+            margin: 0 15px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
         }
 
         nav a:hover {
-            background-color: #F2A900; 
-            color: #002D56;
+            background-color: var(--azul-utpl);
+            color: white;
         }
 
-        /* Contenedor central */
-        .container {
+        /* Contenido */
+        .main-container {
             max-width: 900px;
-            margin: 30px auto;
+            margin: 20px auto;
             background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
 
-        /* Estilo de las facultades */
         h2 {
-            color: #002D56;
-            border-bottom: 3px solid #F2A900;
-            padding-bottom: 8px;
-            margin-top: 40px;
+            color: var(--azul-utpl);
+            border-left: 5px solid var(--dorado-utpl);
+            padding-left: 15px;
+            margin-top: 30px;
+            font-size: 1.4em;
         }
 
-        /* Tablas mejoradas */
+        /* Tablas */
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 15px;
+            background-color: white;
         }
 
-        th, td {
-            border: 1px solid #e0e0e0;
-            padding: 12px 15px;
-            text-align: left;
+        table, th, td {
+            border: 1px solid #dee2e6;
         }
 
         th {
-            background-color: #002D56;
+            background-color: var(--azul-utpl);
             color: white;
+            padding: 12px;
+            text-align: left;
         }
 
-        /* Filas intercaladas para leer mejor */
+        td {
+            padding: 10px;
+        }
+
+        /* Efecto cebra para las filas */
         tr:nth-child(even) {
-            background-color: #f9f9f9;
+            background-color: #f8f9fa;
         }
 
         tr:hover {
-            background-color: #f1f5f9;
+            background-color: #fff9e6; /* Resalte en dorado muy suave */
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            color: #666;
-            font-size: 14px;
-            margin-top: 20px;
+            padding: 30px;
+            font-size: 0.8em;
+            color: #777;
         }
     </style>
 </head>
@@ -109,109 +116,95 @@
 
     <header>
         <h1>Oferta Académica UTPL</h1>
+        <p>Solución Digital Institucional</p>
     </header>
 
     <nav>
-        <a href="#ingenierias">Ingenierías y Arquitectura</a>
-        <a href="#salud">Ciencias de la Salud</a>
-        <a href="#economicas">Ciencias Económicas</a>
-        <a href="#sociales">Ciencias Sociales</a>
+        <a href="#ingenieria">Ingeniería</a>
+        <a href="#salud">Salud</a>
+        <a href="#economica">Economía</a>
+        <a href="#social">Sociales</a>
     </nav>
 
-    <div class="container">
+    <div class="main-container">
         
-        <section id="ingenierias">
+        <section id="ingenieria">
             <h2>Facultad de Ingenierías y Arquitectura</h2>
             <table>
-                <thead>
-                    <tr>
-                        <th>Carrera</th>
-                        <th>Título que otorga</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Arquitectura</td>
-                        <td>Arquitecto/a</td>
-                    </tr>
-                    <tr>
-                        <td>Computación</td>
-                        <td>Ingeniero/a en Computación</td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <th>Carrera</th>
+                    <th>Título que otorga</th>
+                </tr>
+                <tr>
+                    <td>Computación</td>
+                    <td>Ingeniero/a en Computación</td>
+                </tr>
+                <tr>
+                    <td>Arquitectura</td>
+                    <td>Arquitecto/a</td>
+                </tr>
             </table>
         </section>
 
         <section id="salud">
             <h2>Facultad de Ciencias de la Salud</h2>
             <table>
-                <thead>
-                    <tr>
-                        <th>Carrera</th>
-                        <th>Título que otorga</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Medicina</td>
-                        <td>Médico/a</td>
-                    </tr>
-                    <tr>
-                        <td>Enfermería</td>
-                        <td>Licenciado/a en Enfermería</td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <th>Carrera</th>
+                    <th>Título que otorga</th>
+                </tr>
+                <tr>
+                    <td>Medicina</td>
+                    <td>Médico/a</td>
+                </tr>
+                <tr>
+                    <td>Enfermería</td>
+                    <td>Licenciado/a en Enfermería</td>
+                </tr>
             </table>
         </section>
 
-        <section id="economicas">
+        <section id="economica">
             <h2>Facultad de Ciencias Económicas y Empresariales</h2>
             <table>
-                <thead>
-                    <tr>
-                        <th>Carrera</th>
-                        <th>Título que otorga</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Administración de Empresas</td>
-                        <td>Licenciado/a en Administración de Empresas</td>
-                    </tr>
-                    <tr>
-                        <td>Economía</td>
-                        <td>Economista</td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <th>Carrera</th>
+                    <th>Título que otorga</th>
+                </tr>
+                <tr>
+                    <td>Economía</td>
+                    <td>Economista</td>
+                </tr>
+                <tr>
+                    <td>Administración de Empresas</td>
+                    <td>Licenciado/a en Administración de Empresas</td>
+                </tr>
             </table>
         </section>
 
-        <section id="sociales">
+        <section id="social">
             <h2>Facultad de Ciencias Sociales, Educación y Humanidades</h2>
             <table>
-                <thead>
-                    <tr>
-                        <th>Carrera</th>
-                        <th>Título que otorga</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Derecho</td>
-                        <td>Abogado/a</td>
-                    </tr>
-                    <tr>
-                        <td>Psicología</td>
-                        <td>Licenciado/a en Psicología</td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <th>Carrera</th>
+                    <th>Título que otorga</th>
+                </tr>
+                <tr>
+                    <td>Derecho</td>
+                    <td>Abogado/a</td>
+                </tr>
+                <tr>
+                    <td>Psicología</td>
+                    <td>Licenciado/a en Psicología</td>
+                </tr>
             </table>
         </section>
 
     </div>
 
     <footer>
-        <p>Desarrollado para el proyecto de Organización Institucional - UTPL</p>
+        <p>Entidad: Universidad Técnica Particular de Loja<br>
+        Repositorio bajo control institucional de cambios (GitHub Actions).</p>
     </footer>
 
 </body>
