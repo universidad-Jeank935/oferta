@@ -2,142 +2,114 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oferta Académica | UTPL</title>
+    <title>Oferta Académica UTPL - Trabajo Estudiantil</title>
     <style>
-        :root {
-            --primary-color: #003366; 
-            --secondary-color: #fca311; 
-            --bg-color: #f8f9fa;
-            --text-color: #333;
-        }
-
+        /* Estilos básicos y sencillos */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, Helvetica, sans-serif; /* Fuentes estándar */
             margin: 0;
             padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            background-color: #f0f0f0; /* Fondo gris claro simple */
         }
 
-        /* Navegación clara entre secciones */
-        nav {
-            background-color: var(--primary-color);
-            position: sticky;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        nav ul li {
-            margin: 0;
-        }
-
-        nav ul li a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        nav ul li a:hover {
-            background-color: #002244;
-            color: var(--secondary-color);
-        }
-
+        /* Encabezado simple */
         header {
+            background-color: #004080; /* Azul UTPL básico */
+            color: white;
             text-align: center;
-            padding: 40px 20px;
-            background: white;
-            border-bottom: 2px solid var(--secondary-color);
+            padding: 20px;
         }
 
-        h1 {
+        header h1 {
             margin: 0;
-            color: var(--primary-color);
-            font-size: 2.5em;
         }
 
+        /* Navegación clara pero básica (Centrada) */
+        nav {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px; /* Espacio entre enlaces */
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #004080;
+            text-decoration: underline; /* Subrayado clásico al pasar el mouse */
+        }
+
+        /* Contenedor principal */
         main {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 0 20px;
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto; /* Centrado en la pantalla */
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
         }
 
-        /* Secciones por facultad */
+        /* Secciones sencillas */
         section {
-            background: white;
-            border-radius: 8px;
-            padding: 25px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            scroll-margin-top: 70px; /* Para que el menú no tape el título */
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #fafafa;
         }
 
         h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+            color: #004080;
+            border-bottom: 1px solid #004080;
+            padding-bottom: 5px;
             margin-top: 0;
         }
 
-        /* Tablas de carreras y títulos */
+        /* Tabla clásica con bordes visibles */
         table {
             width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
+            border-collapse: collapse; /* Bordes simples */
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid black; /* Bordes negros clásicos */
         }
 
         th, td {
-            padding: 12px 15px;
+            padding: 8px;
             text-align: left;
-            border-bottom: 1px solid #ddd;
         }
 
         th {
-            background-color: var(--primary-color);
-            color: white;
-            font-weight: 600;
+            background-color: #dcdcdc; /* Fondo gris para el encabezado de tabla */
         }
 
-        tr:hover {
-            background-color: #f1f5f9;
-        }
-
+        /* Pie de página básico */
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: var(--primary-color);
-            color: white;
-            margin-top: 40px;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #666;
         }
     </style>
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="#ingenierias">Ingenierías y Arquitectura</a></li>
-            <li><a href="#salud">Ciencias de la Salud</a></li>
-            <li><a href="#economicas">Ciencias Económicas</a></li>
-        </ul>
-    </nav>
-
     <header>
         <h1>Oferta Académica UTPL</h1>
+        <p>Presentación Institucional Organizada</p>
     </header>
+
+    <nav>
+        <a href="#ingenierias">Ingenierías</a> |
+        <a href="#salud">Ciencias de la Salud</a> |
+        <a href="#economicas">Ciencias Económicas</a>
+    </nav>
 
     <main>
         <section id="ingenierias">
@@ -159,8 +131,8 @@
                         <td>Ingeniero/a en Computación</td>
                     </tr>
                     <tr>
-                        <td>Tecnologías de la Información</td>
-                        <td>Ingeniero/a en Tecnologías de la Información</td>
+                        <td>Telecomunicaciones</td>
+                        <td>Ingeniero/a en Telecomunicaciones</td>
                     </tr>
                 </tbody>
             </table>
@@ -189,7 +161,7 @@
         </section>
 
         <section id="economicas">
-            <h2>Facultad de Ciencias Económicas y Empresariales</h2>
+            <h2>Facultad de Ciencias Económicas</h2>
             <table>
                 <thead>
                     <tr>
@@ -199,12 +171,12 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Administración de Empresas</td>
-                        <td>Licenciado/a en Administración de Empresas</td>
-                    </tr>
-                    <tr>
                         <td>Economía</td>
                         <td>Economista</td>
+                    </tr>
+                    <tr>
+                        <td>Administración de Empresas</td>
+                        <td>Licenciado/a en Administración de Empresas</td>
                     </tr>
                 </tbody>
             </table>
@@ -213,7 +185,7 @@
     </main>
 
     <footer>
-        <p>&copy; Universidad Técnica Particular de Loja - Información Institucional Oficial</p>
+        <p>Página creada para el proyecto de la UTPL - Mayo 2024</p>
     </footer>
 
 </body>
