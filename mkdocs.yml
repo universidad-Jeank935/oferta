@@ -1,12 +1,23 @@
 site_name: Oferta Académica | UTPL
 theme:
   name: material
+  language: es
   palette:
-    primary: custom
-    accent: amber
-  font:
-    text: Roboto
-    code: Roboto Mono
+    primary: custom 
+    # Color amarillo para botones y enlaces
+    accent: amber 
+  features:
+    - navigation.sections
+    - content.tabs.link
+    - content.code.copy
 
-nav:
-  - Oferta Académica: index.md
+extra:
+  design:
+    color:
+      primary: "#002D56"
+      accent: "#F2A900"
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
