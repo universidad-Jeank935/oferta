@@ -1,0 +1,12 @@
+site_name: Oferta Académica | UTPL
+theme:
+  name: material
+  palette:
+    primary: custom
+    accent: amber
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+nav:
+  - Oferta Académica: index.md
